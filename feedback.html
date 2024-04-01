@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>   
+    <title>Stevens Books House</title>  
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>   
+  </head>
+  <body>
+
+    <h1>Stevens Books House</h1>
+
+    <img id = "background_img" src="/assets/StevensBookHouse.jpg" />
+
+    <div class = "form-box">
+
+        <h3>Feedback Form</h3>
+        <form id="form">
+
+            <label  for="fname">First Name</label>
+            <input type="text" placeholder="First Name" id="fname">
+
+            <label  for="lname">Last Name</label>
+            <input type="text" placeholder="Last Name" id="lname">
+
+            <label for="email" >Enter your email:</label>
+            <input type="email" placeholder="Email Address" id="email" name="email">
+
+            <p>Please select the book you give feedback for:</p>
+            <input type="radio" id="Coding" name="book" value="Cracking Coding Interview">
+            <label for="coding">Cracking Coding Interview</label><br>
+            <input type="radio" id="Java" name="book" value="Introduction to Java Programming">
+            <label for="Java">Introduction to Java Programming</label><br>  
+            <input type="radio" id="Python" name="book" value="Python Programming for Beginners">
+            <label for="Python">Python Programming for Beginners</label><br> 
+            <input type="radio" id="Design" name="book" value="An Introduction to Software Design">
+            <label for="Design">An Introduction to Software Design</label><br>
+            <input type="radio" id="SQL" name="book" value="Step by Step Guide to Learning SQL">
+            <label for="SQL">Step by Step Guide to Learning SQL</label><br><br>
+
+            <label for="feedback">Feedback</label>
+            <textarea id="feedback" name="message" placeholder="Please type your feedback" style="height:200px"></textarea>
+
+            <button type="submit" id="submit" value="Submit">Submit</button>
+            
+        </form>
+           
+    </div>
+  
+    <footer>
+        <a class="footer-anchor"  href="feedback.html"  target="_blank">Give Feedback</a>
+        <a  class="footer-anchor" href="#top" >Jump to Top</a> 
+    </footer>
+  
+        
+  </body>
+
+
+</html>

@@ -1,0 +1,173 @@
+$text-summary-color: brown;
+$header-height: 5vh;
+$header-color: purple;
+$book-name-text: 1.11em;
+$book-summary-text: 1.5em;
+$book-text-weight: 700; 
+$header-border: 1px;
+$book-dimension: 180px;
+$header-background-color: rgba(0, 128, 0, 0.2);
+$footer-background-color:rgba(0, 128, 0, 0.8);
+
+html, body {
+    /* Make the body to be as tall as browser window */
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  #background_img {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1 {
+    color: $header-color;
+    margin: 0px;
+    height: $header-height;
+    position: relative;
+    z-index: 2;
+    background-color: $header-background-color;
+    border: $header-border solid black;
+    padding-left: 40%;
+  }
+
+  .book-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top:11vh;
+    z-index: 2;
+
+  }
+
+  .book{
+    height: 210px;
+    width: 210px;
+    position: relative;
+    left: 0.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $book-name-text;
+    font-weight: $book-text-weight;
+    
+  }
+
+  div label a{
+    color: $text-summary-color;
+    text-decoration: none;
+
+  }
+
+  #coding{
+    width: $book-dimension;
+    height: $book-dimension;
+  }
+
+  #java{
+    width: $book-dimension;
+    height: $book-dimension;
+  }
+
+  #python{
+    width: $book-dimension;
+    height: $book-dimension;
+  }
+
+  #design{
+    width: $book-dimension;
+    height: $book-dimension;
+  }
+
+  #sql{
+    width: $book-dimension;
+    height: $book-dimension;
+  }
+
+  footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: $header-color;
+    margin: 0px;
+    height: $header-height;
+    position: fixed;
+    left:0px;
+    bottom: 0px;
+    right:0px;
+    z-index: 2;
+    background-color: $footer-background-color;
+    border: $header-border solid black;
+    
+  }
+
+  footer a{
+    text-decoration: none;
+  }
+
+  .footer-anchor{
+    padding-right: 18px;
+    font-size: $book-name-text;
+    font-weight: $book-text-weight;
+  }
+
+  .book-page{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    position: relative;
+    top:6vh;
+    z-index: 2;
+    font-size: $book-summary-text;
+    font-weight: $book-text-weight;
+    color:$text-summary-color;
+  }
+
+  .form-box{
+    background-color: gray;
+    opacity: 0.95;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    color:$text-summary-color;
+}
+
+input[type=text],input[type=email],textarea{
+    width: 70%;
+    padding: 10px;
+    border: $header-border solid black;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: block;    
+}
+
+button {
+    background-color: #2e3fd4;
+    color: white;
+    padding: 12px 20px;
+    border: $header-border solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover{
+    background-color: #45a049;
+  }
+
+
+
+
+
+
